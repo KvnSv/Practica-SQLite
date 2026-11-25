@@ -1,0 +1,23 @@
+name: gestor_tareas_local
+description: Practica de Programacion de Dispositivos Moviles. Gestor CRUD de tareas con SQLite y Drift.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  drift: ^2.35.4
+  drift_flutter: ^0.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  drift_dev: ^2.35.3
+  build_runner: ^2.16.2
+
+flutter:
+  uses-material-design: true

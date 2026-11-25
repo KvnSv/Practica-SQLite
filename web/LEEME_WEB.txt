@@ -1,0 +1,15 @@
+Esta carpeta debe conservar el index.html, manifest.json y demas archivos que genera `flutter create`.
+
+Para soportar SQLite real en el navegador, agrega aqui dos archivos binarios de la
+MISMA version de Drift que uses en pubspec.lock:
+  - sqlite3.wasm
+  - drift_worker.dart.js
+
+En Windows usa (desde la raiz del proyecto):
+  powershell -ExecutionPolicy Bypass -File .\scripts\preparar_web.ps1
+
+Luego inicia Flutter Chrome con puerto fijo:
+  flutter run -d chrome --web-port=7357
+
+El navegador guarda los datos por origen: si cambias el puerto, el navegador
+mostrara otra base de datos, aun cuando los registros sigan almacenados en el origen anterior.
